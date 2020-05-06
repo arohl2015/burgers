@@ -10,7 +10,7 @@ USE burgers_db;
 
 CREATE TABLE burgers
 (
-	id int NOT NULL AUTO_INCREMENT,
+	id INT NOT NULL AUTO_INCREMENT,
 	burger_name varchar(200) NOT NULL,
     -- default to false - want them to not be devoured first
     devoured BOOLEAN DEFAULT false,
