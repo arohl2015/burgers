@@ -8,12 +8,12 @@ var burger = {
     });
   },
   create: function(cols, value, cb) {
-    orm.create("burgers", "burger_name", cols, value, function(res) {
+    orm.create("burgers", cols, value, function(res) {
       cb(res);
     });
   },
-  update: function(objColVals, condition, cb, id) {
-    orm.update("burgers", objColVals, condition, id, function(res) {
+  update: function(objColVals, condition, cb) {
+    orm.update("burgers", objColVals, condition, function(res) {
       cb(res);
     });
   },

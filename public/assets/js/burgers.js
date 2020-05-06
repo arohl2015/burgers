@@ -2,7 +2,7 @@
 $(function() {
     $(".change-devoured").on("click", function(event) {
       var id = $(this).data("id");
-      var devouredState = $(this).data("nowDevoured");
+      var devouredState = $(this).data("devouredState");
 
       var newDevouredState = {
         devoured: devouredState
@@ -14,7 +14,7 @@ $(function() {
         data: newDevouredState
       }).then(
         function() {
-          console.log("changed burger state");
+          console.log("changed burger to", devouredState);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -42,19 +42,4 @@ $(function() {
         }
       );
     });
-  
-    // $(".delete-cat").on("click", function(event) {
-    //   var id = $(this).data("id");
-  
-    //   // Send the DELETE request.
-    //   $.ajax("/api/cats/" + id, {
-    //     type: "DELETE"
-    //   }).then(
-    //     function() {
-    //       console.log("deleted cat", id);
-    //       // Reload the page to get the updated list
-    //       location.reload();
-    //     }
-    //   );
-    // });
   });
