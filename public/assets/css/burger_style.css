@@ -1,0 +1,11 @@
+#jumbo {
+    background-image: url("../img/Burger-pattern-seamless-vector-02.jpg");
+    background-size: cover;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: black;
+    color: whitesmoke;
+  }
