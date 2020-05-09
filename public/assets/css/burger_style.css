@@ -1,11 +1,20 @@
+.bistro {
+    background-color: honeydew;
+}
+
 #jumbo {
     background-image: url("../img/Burger-pattern-seamless-vector-02.jpg");
     background-size: cover;
+    opacity: .7;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Permanent Marker', cursive;
 }
 
 li {
     padding: 5px;
     margin: 5px;
-    background: black;
+    background: tan;
     color: whitesmoke;
+    font-family: 'Sarabun', sans-serif;
   }
